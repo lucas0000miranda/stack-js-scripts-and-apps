@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+</head>
+    <h1>Most Commum Events: Forms</h1>
+    <script type="text/javascript" src="index.js"></script>
+<body>
+<table>
+    <tr>
+        <th><h3>EVENT</h3></th>
+        <th><h3>DESCRIPTONS</h3></th>
+    </tr>
+    <tr>
+        <td>onfocus:</td>
+        <td><h4> acionado quando o elemento recebe o foco do cursor</h4></td>
+    </tr>
+    <tr>
+        <td>onblur: </td>
+        <td><h4>acionado quando o elemento perde o focu do cursor</h4></td>
+    </tr>
+    <tr>
+        <td>onchange:</td>
+        <td><h4>acionado quando o estado do elemento eh modificado</h4></td>
+    </tr>
+</table>
+
+<!--tem o nome de eventos para tags/elementos 'form' mas nao necessarimente eh so para o form. Por essa razao-->
+<!--nao eh necessario utiliza-lo dentro da tag form-->
+
+ <input onfocus="welcome()" type="text" />
+<input onblur="welcome()" type="text" />
+<!--o onchange eh MAIS UTLIZADO para tags select.-->
+<select onchange="welcome()">
+    <option value="1">Primeira opcao</option>
+    <option value="2">Segunda opcao</option>
+    <option value="3">Terceira</option>
+</select>
+
+<!--Eventos mistos-->
+<input onfocus="welcome()" onblur="welcome()" type="text" />
+
+</body>
+</html>

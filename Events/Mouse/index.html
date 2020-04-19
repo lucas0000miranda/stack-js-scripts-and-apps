@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+</head>
+    <h1>Most Commum Events: Mouse</h1>
+    <script type="text/javascript" src="index.js"></script>
+<body>
+<table>
+    <tr>
+        <th><h3>EVENT</h3></th>
+        <th><h3>DESCRIPTONS</h3></th>
+    </tr>
+    <tr>
+        <td>onclick:</td>
+        <td><h4> acionado no clique do mouse </h4></td>
+    </tr>
+    <tr>
+        <td>ondbclick: </td>
+        <td><h4>acionado no click duplo</h4></td>
+    </tr>
+    <tr>
+        <td>onmousedown:</td>
+        <td><h4>acionado no click do mouse, soltando ou nao o botao</h4></td>
+    </tr>
+    <tr>
+        <td>onmouseover:</td>
+        <td><h4>acionado quando o cursor do mouse sobrepoe o elemento da pagina</h4></td>
+    </tr>
+    <tr>
+        <td>onmouseout:</td>
+        <td><h4>acionado quando o cursor do mouse sai da area de um elemento da pagina</h4></td>
+    </tr>
+</table>
+
+<div onclick="welcome()" style="background-color: darkslategray; height:150px; width:150px;"></div>
+<div ondbclick="welcome()" style="background-color: cornflowerblue; height:150px; width:150px"></div>
+<div onmousedown="welcome()" style="background-color: darkolivegreen; height:150px; width:150px"></div>
+<div onmouseover="welcome()" style="background-color: lightcoral; height:150px; width:150px"></div>
+<div onmouseout="welcome()" style="background-color: slateblue; height:150px; width:150px"></div>
+
+<!--Eventos mistos-->
+<div onclick="welcome()" onmouseout="welcome()" style="background-color: aqua; height:150px; width:150px"></div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+</head>
+    <h1>Most Commum Events: Keyboard</h1>
+    <script type="text/javascript" src="index.js"></script>
+<body>
+<table>
+    <tr>
+        <th><h3>EVENT</h3></th>
+        <th><h3>DESCRIPTONS</h3></th>
+    </tr>
+    <tr>
+        <td>onkeydown:</td>
+        <td><h4> acionado no momemento em que a tecla eh pressionada (soltando ou nao a tecla)</h4></td>
+    </tr>
+    <tr>
+        <td>onkeypress: </td>
+        <td><h4>acionado no momemento em que a tecla eh pressionada (soltando ou nao a tecla)
+        porem nao captura todas as teclas (ex.:alt, crlt, esc, shift etc)
+        </h4></td>
+    </tr>
+    <tr>
+        <td>onkeyup:</td>
+        <td><h4>acionado no momento em que a tecla eh liberada</h4></td>
+    </tr>
+</table>
+
+<input onkeydown="welcome()" type="text" />
+<input onkeypress="welcome()" type="text" />
+<input onkeyup="welcome()" type="text" />
+
+<!--Eventos mistos-->
+<input onkeyup="welcome()" onkeypress="welcome()" type="text" />
+
+</body>
+</html>
